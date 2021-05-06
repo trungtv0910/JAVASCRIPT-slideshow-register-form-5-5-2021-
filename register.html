@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/1.css">
+     <link rel="stylesheet" href="css/dang-ky.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assect/plugin/fontawesome/css/all.css">
+    <title>Đăng Ký</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="logo float-left" style="background: none;">ASSIGNMENT Javascript</div>
+                <div class="catogory float-right">
+                    <ul>
+                        <li ><a href="index.html">Slide show</a></li>
+                        <li class="kich_hoat"><a href="register.html">Đăng ký</a></li>
+                        <li><a href="sell.html">Đặt hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> <!-- header-->
+
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="form" >
+                <form action="" onsubmit="return kiem_tra()">
+                    <h1 style="color: #0071e3 ;font-size: 37px;"> Đăng ký</h1>
+               
+        
+    
+                   <div class="form-group">
+                    <label for="" class="masv">Mã Sinh Viên</label> 
+                    <input type="text" name ="masv" id="masv" placeholder="VD: TrungtvPD04212" onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+                   <div class="form-group">
+                    <label for="" class="fullname">Họ Và Tên</label> 
+                    <input type="text" name ="fullname" id="fullname" placeholder="VD: Trần Văn Trung"onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+                   <div class="form-group">
+                    <label for="" class="enail">Email</label> 
+                    <input type="text" name ="email" id="email" placeholder="VD:Trungtv@mail.com"onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+                   
+                                  
+                   <div class="form-group">
+                    <label for="" class="sex">Giới Tính</label>
+                    <div class="boc">                 
+                        <input type="radio" name="sex" id="nam" onclick="kiem_tra()" ><label for="nam"> Nam</label>
+                        <input type="radio" name="sex" id="nu"onclick="kiem_tra()"><label for="nu"> Nữ</label>
+                    </div> <!--bọc-->
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+                    <div class="form-group">
+                    <label for="" class="hobby">Sở Thích</label>
+                    <div class="boc">                 
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()" > Đọc Sách
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> Du lịch
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> Âm nhạc
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> Ẩm thực
+                        <input type="checkbox" name="hobby" id="hobby" onclick="hien_thi()"  > Khác
+                      
+                        <div class="hobby-defferent"  style="display:none" >
+                           
+                            <textarea name="" id="" cols="58" rows="3"placeholder="sở thích khác"></textarea>
+                        </div>
+    
+                    </div> <!--bọc-->
+                    <span class="form-massage"></span>
+                   </div> 
+    
+    
+    
+                   <div class="form-group">
+                    <label for="" class="">Quốc Tịch</label>
+                              
+                        <select name="quocTich" id="quocTich"  name="TenDanhSach">
+                            <option value="">Chọn Quốc Gia</option>
+                            <option value="1">Lào</option>
+                            <option value="2" >Việt nam</option>
+                            
+                            <option value="3">Thái Lan</option>
+                            <option value="4">Singapo</option>
+                            <option value="5">Campuchia</option>
+                            <option value="6">Angola</option>
+                            <option value="7">Japan</option>
+                            <option value="8">Koria</option>
+                            <option value="9">Hong Kong</option>
+                            <option value="10">TaiWan</option>
+                            <option value="11">Russia</option>
+                            <option value="12">Dubai</option>
+                            
+                    
+                        </select>
+                    
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+    
+                   <div class="form-group">
+                    <label for="" class="ghi-chu">Ghi Chú</label>
+                    <textarea name="note" id="note" cols="20" rows="4" style="border: 1px solid #d6d6d6;" placeholder="ghi chú không quá 200 ký tự"></textarea>
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+                   
+                   <button class="bt-submit">Đăng ký</button>
+                   <span class="dk_thanhcong" style="display: none;"> Đăng Ký Thành Công</span>
+                   
+    
+    
+    
+                </form>
+            </div>
+          
+            
+        </div> <!-- container-->
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+
+        <div class="footer-trai float-left">
+            <h3>ASSIGNMENT</h3> <span>Javascript</span>
+            <br>
+            <br>
+            <p>Tên Sv: Trần Văn Trung</p>
+            <p>Mã SV: PD04212</p>
+        </div>
+        <div class="footer-phai float-left">
+            <h3>
+                Liên hệ
+            </h3>
+            <br>
+            <p>Email: trungtv0910@gmail.com</p>
+            <p>Phone: 0973127008</p>
+            <a href="https://www.facebook.com/profile.php?id=100026976980397" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+            <a href="https://github.com/trungtv0910" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</div>
+
+    </div><!--wrapper-->
+    
+
+
+    <script src="js/dang_ky.js"></script>
+</body>
+</html>
